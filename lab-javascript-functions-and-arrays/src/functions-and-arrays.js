@@ -243,6 +243,38 @@ function greatestProduct(matrix) {
 }
 
 
+// Iteration #8.2: Product of diagonals
+
+function greatestProductOfDiagonals(matrix) {
+  let product = 0
+
+  const numberOfRows = matrix.length
+  const numberOfColumns = matrix[0].length
+
+  for (let i = 0; i < numberOfRows - 3; i++) {
+    for (let e = 0; e < numberOfColumns - 3; e++) {
+      let diagonalProduct = matrix[e][i] * matrix[e + 1][i + 1] * matrix[e + 2][i + 2] * matrix[e + 3][i + 3]
+
+      if (diagonalProduct > product) {
+        product = diagonalProduct
+      }
+    }
+  }
+
+  for (let i = 3; i < numberOfRows - 3; i++) {
+    for (let e = 3; e < numberOfColumns - 3; e++) {
+      let diagonalProduct = matrix[e][i] * matrix[e + 1][i - 1] * matrix[e + 2][i - 2] * matrix[e + 3][i - 3]
+
+      if (diagonalProduct > product) {
+        product = diagonalProduct
+      }
+    }
+  }
+
+  return product
+}
+
+
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
 if (typeof module !== 'undefined') {
