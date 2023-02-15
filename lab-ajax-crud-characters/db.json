@@ -1,0 +1,32 @@
+{
+  "characters": [
+    {
+      "name": "New name",
+      "occupation": "New occupation",
+      "weapon": "New weapon",
+      "cartoon": false,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Luke Skywalker",
+      "occupation": "Jedi Knight",
+      "weapon": "Lightsaber",
+      "cartoon": false
+    },
+    {
+      "name": "3",
+      "occupation": "3",
+      "weapon": "3",
+      "cartoon": false,
+      "id": 3
+    },
+    {
+      "name": "New character",
+      "occupation": "New new",
+      "weapon": "New new",
+      "cartoon": false,
+      "id": 4
+    }
+  ]
+}
